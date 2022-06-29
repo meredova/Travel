@@ -203,6 +203,9 @@ nav a:hover {
     align-items: center;
     gap: 25px;    
 }
+.step-position:nth-child(2) {
+	margin-left: 72px;
+}
 .steps-description {
     font-size: 20px;
     font-weight: 400;
