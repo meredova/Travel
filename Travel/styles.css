@@ -12,6 +12,7 @@ html {
 }
 .wrapper {
     max-width: 1440px;
+    max-height: 3735px;
     margin: 0 auto;
     background: #fff;
     display: flex;
@@ -53,7 +54,7 @@ header {
 .navigation {
     padding: 0;
     top: 35px;
-    margin-left: -50px;
+    margin-left: 60px;
 }
 .nav-list {
     display: flex;
@@ -120,14 +121,16 @@ nav a:hover {
 .h1descriptiondiv {
     padding: 0;
     margin-bottom: 46px;
+    width: 730px;
+    height: 24px;
 }
 .h1description {
     color: #fff;
     font-size: 20px;
-    font-weight: 700;
     line-height: 24px;
-    font-family: 'Aleo', serif;
+    font-family: 'Aleo';
     font-style: italic;
+    font-weight: 700;
 }
 .preview-form {
     position: relative;
@@ -142,12 +145,12 @@ nav a:hover {
     border-radius: 16px;
     border-style: none;
     outline: none;
-    color: transparent;
+    color: #0D606F;
   }
 ::-webkit-input-placeholder { 
     color: #F2785C;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 29px;
     font-family: 'Aleo', serif;
     font-style: italic;
@@ -179,7 +182,8 @@ nav a:hover {
 }
 .h2steps {
     text-align: center;
-    padding: 80px 0 40px;
+    padding: 80px 0px 40px;
+    margin-left: 89px;
     color: #F2785C;
     font-size: 40px;
     font-weight: 500;
@@ -189,15 +193,15 @@ nav a:hover {
 }
 .stepslist {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;    
     margin-bottom: 50px;
+    width: 1177px;
 }
 .step-position {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;    
+    gap: 25px;    
 }
 .steps-description {
     font-size: 20px;
@@ -214,8 +218,8 @@ nav a:hover {
     flex-direction: column;
     top: 1189px;
     height: 1042px;
-    margin:0;
-    padding: 0;
+    margin-left: 90px;
+    padding-top: 5px ;
 }
 .h2destinations {
     text-align: center;
@@ -262,7 +266,7 @@ nav a:hover {
 .slider-point {
     width: 20px;
     height: 20px;
-    margin: 20px 0 40px;
+    margin: 20px 0 37px;
     background: rgba(242, 120, 92, 0.5);
     border-radius: 50%;
 }
@@ -271,7 +275,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     border-style: none;
     cursor: pointer;
     background: #fff;
@@ -282,8 +285,10 @@ nav a:hover {
     flex-direction: column;
     align-items: stretch;
     top: 2311px;
-    height: 1371px;
-    margin-top: 80px;
+    height: 1450px;
+    
+
+
 }
 .h2stories {
     display: flex;
@@ -294,8 +299,10 @@ nav a:hover {
     font-weight: 500;
     line-height: 53px;
     font-family: 'Red Hat Text', serif;
-    padding: 0;
-    margin-bottom: 40px;
+
+    margin-bottom: 30px;
+    padding-left: 90px;
+    padding-top: 85px;
 }
 .media {
     display: flex;
@@ -304,7 +311,8 @@ nav a:hover {
     margin: 40px 120px 30px;
 }
 .media-background {
-    top: 2404px;
+    padding-bottom: 5px;
+    width: 1445px;
     height: 1270px;
     background: rgba(225, 255, 255, 0.7);
     margin: 0px;
