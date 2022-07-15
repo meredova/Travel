@@ -9,12 +9,26 @@ button, input, textarea {
 	line-height: 1.15;
 	margin: 0;
 }
+button,
 input {
-    overflow: visible;
+	overflow: visible;
+}
+button {
+	text-transform: none;
+}
+input {
     font-family: inherit;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
 }
 .button:hover,
 .button:focus,
@@ -61,6 +75,8 @@ ul {
 	border: none;
 	border-radius: 10px;
 	background-color: #0d606f;
+	cursor: pointer;
+	transition: all 0.5s ease;
 }
 .button:hover {
 	background-color: #04333c;
@@ -130,12 +146,6 @@ header {
 	align-items: center;
 }
 @media (min-width: 390px) {
-
-	.nav-list .nav-item:nth-child(5),
-	.nav-list .nav-item:nth-child(6) {
-		display: none;
-	}
-}
 .nav-item {
 	margin-right: 40px;
 	text-align: center;
@@ -277,7 +287,7 @@ h1 {
 /* Destinations
 ---------------------------------------------------*/
 .destinationsclass {
-	padding: 45px 0 20px;
+	padding: 0px 0 20px;
 	text-align: center;
 	background-color: #fff;
 }
@@ -492,7 +502,6 @@ h1 {
     align-items: center;
 }
 
-
 /*@media (max-width: 1200px)
 --------------------------------------------------------------------------------------*/
 @media (max-width: 1200px) {
@@ -591,12 +600,12 @@ h1 {
 		height: 1.4vw;
 	}
 
-	.button.button-arrow {
+	.button.arrow-button {
 		padding: 1vw 2.5vw 1vw 5.5vw;
 		font-size: calc(11px + (13 + 13 * 0.7) * ((100vw - 390px) / 1440));
 		background-size: 7.22vw 2.85vw;
 	}
-	.button.button-arrow:hover {
+	.button.arrow-button:hover {
 		background-size: 5.27vw 3.54vw;
 	}
 
@@ -930,7 +939,7 @@ h1 {
 		height: 2vw;
 	}
 
-	.button.button-arrow {
+	.button.arrow-button {
 		padding: 2vw 3.4vw 2vw 7.5vw;
 		background-size: 9vw 2.85vw;
 	}
@@ -993,6 +1002,9 @@ h1 {
 	.main {
 		margin-bottom: -58px;
 	}
+	.preview-form ::placeholder {
+		font-size: calc(9px + (11 + 11 * 0.7) * ((100vw - 390px) / 1440));
+	}
 
     .container.stories__container {
 		margin-bottom: 6.6vw;
@@ -1027,5 +1039,3 @@ h1 {
 		display: inline-block;
 	}
 }
-
-
