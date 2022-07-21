@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&family=Roboto&display=swap">
     <title>Travel</title>
     <link rel="icon" href="./assets/svg/favicon.svg">
 </head>
@@ -14,11 +14,11 @@
 		<div class="popup-title">Log in to your account</div>
 		<div class="sign-wrap active">
 			<div class="sign-facebook">
-				<img src="" alt="facebooklogo">                        
+				<div><img src="./assets/svg/facebook.svg" alt="facebooklogo"></div>                        
 			Sign In with Facebook
 			</div>
 			<div class="sign-google">
-				<img src="" alt="googlelogo">	
+				<div><img src="./assets/svg/google.svg" alt="googlelogo"></div>	
 			Sign In with Google 
 			</div>
 			<div class="divider-or-wrap">
@@ -33,7 +33,7 @@
 		<div class="forgot active">Forgot Your Password?</div>
 		<div class="divider"></div>
 		<div class="popup-reg">
-			<span class="popup-reg-ques">Don’t have an account?</span>
+			<span class="popup-reg-ques">Don`t have an account?</span>
 			<span class="popup-reg-link active" id="register">Register</span>
 			<span class="popup-reg-link" id="logInPopup">Log In</span>
 		</div>
@@ -64,8 +64,9 @@
                     <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
                     <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
                 </ul>
+				<div class="close"></div>
             </nav>            
-            <button class="button header-login-button" type="button">Login</button>
+            <button class="button header-login-button" type="button" id="headerLogin">Login</button>
             <span class="hamburger">
                 <span></span>
             </span>              
