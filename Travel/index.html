@@ -10,6 +10,47 @@
     <link rel="icon" href="./assets/svg/favicon.svg">
 </head>
 <body>
+	<div class="popup">
+		<div class="popup-title">Log in to your account</div>
+		<div class="sign-wrap active">
+			<div class="sign-facebook">
+				<img src="" alt="facebooklogo">                        
+			Sign In with Facebook
+			</div>
+			<div class="sign-google">
+				<img src="" alt="googlelogo">	
+			Sign In with Google 
+			</div>
+			<div class="divider-or-wrap">
+				<div class="divider"></div>
+				<div class="divider-or">or</div>
+				<div class="divider"></div>
+			</div>
+		</div>
+		<label class="">E-mail<input class="" name="email"></label>
+		<label class="">Password<input class="" name="password"></label>
+		<button class="button popup__button" id="signIn">Sign In</button>
+		<div class="forgot active">Forgot Your Password?</div>
+		<div class="divider"></div>
+		<div class="popup-reg">
+			<span class="popup-reg-ques">Don’t have an account?</span>
+			<span class="popup-reg-link active" id="register">Register</span>
+			<span class="popup-reg-link" id="logInPopup">Log In</span>
+		</div>
+	</div>
+
+	<div class="overlay"></div> 
+	<nav class="nav-mobile">
+		<ul class="nav-list">
+			<li class="nav-item"><a href="#preview" class="nav-link">How It Works</a></li>
+			<li class="nav-item"><a href="#steps" class="nav-link">Plan Your Trip</a></li>
+			<li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
+			<li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
+			<li class="nav-item" id="mobileLogin"><div class="nav-link">Account</div></li>
+			<li class="nav-item"><a href="#footer" class="nav-link">Socials Media</a></li>
+		</ul>
+		<div class="close"></div>
+	</nav>
     <header class="header">
         <div class="container header__container">                      
             <a class="header__logo" href="#">
@@ -22,8 +63,6 @@
                     <li class="nav-item"><a href="#steps" class="nav-link">Plan Your Trip</a></li>
                     <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
                     <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Account</a></li>
-					<li class="nav-item"><a href="#social" class="nav-link" >Social Media</a></li>
                 </ul>
             </nav>            
             <button class="button header-login-button" type="button">Login</button>
