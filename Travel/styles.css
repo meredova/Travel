@@ -22,10 +22,7 @@ input {
 	line-height: 1.15;
 	margin: 0;
 }
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-	height: auto;
-}
+
 [type="search"] {
 	-webkit-appearance: textfield;
 	outline-offset: -2px;
@@ -232,6 +229,13 @@ h2 {
   }
   .overlay {
    display: none;
+  }
+  .popup__button {
+	width: 100%;
+	padding: 15px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
   }
 /* Header
 -----------------------------------------------------*/

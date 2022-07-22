@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const body = document.querySelector("body");
 	const menu = body.querySelector(".nav-mobile");
 	const burger = body.querySelector(".hamburger");
-	const menuList = body.querySelector(".nav-list");
-	const MENU = body.querySelector(".navigation");
 	const overlay = body.querySelector(".overlay");
 	const close = menu.querySelector(".close");
 	const headerLogin = document.getElementById("headerLogin");
@@ -76,32 +74,24 @@ document.addEventListener("DOMContentLoaded", () => {
 		let password = parent.querySelector('input[name="password"]').value;
 		alert(`E-mail: '${email}', Password: '${password}'`);
 	});
-
-	function showItem(item) {
-		item.classList.add("active");
-		overlay.classList.add("active");
-		body.classList.add("lock");
-	}
-
-	function hideItem(item) {
-		item.classList.remove("active");
-		overlay.classList.remove("active");
-		body.classList.remove("lock");
-	}
 });
+const burgerMenu = document.querySelector(".hamburger");
+const menuList = document.querySelector(".nav-list");
+const MENU = document.querySelector(".navigation");
 
-// if (burger) {
-// 	burger.addEventListener("click", function (e) {
-// 		burger.classList.toggle("active");
-// 		menuList.classList.toggle("active");
-// 		MENU.classList.toggle("active");
-// 	});
-// }
+if (burgerMenu) {
+	burgerMenu.addEventListener("click", function (e) {
+		burgerMenu.classList.toggle("active");
+		menuList.classList.toggle("active");
+		MENU.classList.toggle("active");
+	});
+}
 
-// if (MENU) {
-// 	MENU.addEventListener("click", function (e) {
-// 		burger.classList.remove("active");
-// 		menuList.classList.remove("active");
-// 		MENU.classList.remove("active");
-// 	});
-// }
+if (MENU) {
+	MENU.addEventListener("click", function (e) {
+		burgerMenu.classList.remove("active");
+		menuList.classList.remove("active");
+		MENU.classList.remove("active");
+	});
+}
+	
