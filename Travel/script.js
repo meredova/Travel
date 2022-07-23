@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // burger
+
     const body = document.querySelector("body");
     const menu = body.querySelector(".nav-mobile");
     const burger = body.querySelector(".burger");
@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
         body.classList.remove("lock");
     }
 
-    // smooth scroll
 
     const anchors = document.querySelectorAll('a.nav-link[href*="#"]');
 
@@ -112,10 +111,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // slider
 
     const dotsArr = document.querySelectorAll(".dot");
-    const slider = document.querySelector(".slider");
-    const slides = slider.querySelector(".slides");
-    const slidesArr = slides.querySelectorAll(".slide");
-    const slide = slides.querySelector(".slide");
+    const slider = document.querySelector(".slider-wrapper");
+    const slides = slider.querySelector(".destinations__slider-list");
+    const slidesArr = slides.querySelectorAll(".destinations__slide");
+    const slide = slides.querySelector(".destinations__slide");
 
     dotsArr.forEach((dot) => {
         dot.addEventListener("click", () => {
@@ -127,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const nextArrow = slider.querySelector(".next");
     nextArrow.addEventListener("click", () => {
-        let activeSleder = slider.querySelector(".slide.active");
+        let activeSleder = slider.querySelector(".destinations__slide.active");
         let id = +activeSleder.dataset.id + 1;
 
         id > slidesArr.length ? (id = id - slidesArr.length) : "";
@@ -137,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const preArrow = slider.querySelector(".pre");
     preArrow.addEventListener("click", () => {
-        let activeSleder = slider.querySelector(".slide.active");
+        let activeSleder = slider.querySelector(".destinations__slide.active");
         let id = +activeSleder.dataset.id - 1;
 
         id < 1 ? (id = slidesArr.length - id) : "";
@@ -164,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function setActive(id) {
         let activeDot = slider.querySelector(`.dot[data-slide="${id}"]`);
         activeDot.classList.add("active");
-        let activeSlide = slider.querySelector(`.slide[data-id="${id}"]`);
+        let activeSlide = slider.querySelector(`.destinations__slide[data-id="${id}"]`);
         activeSlide.classList.add("active");
     }
 
