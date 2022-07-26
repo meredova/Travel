@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function togglePopup(item, flag) {
         let parent = item.closest(".popup");
         let title = parent.querySelector(".popup-title");
-        let signInWrap = parent.querySelector(".signIn-wrap");
+        let signInWrap = parent.querySelector(".sign-wrap");
         let forgot = parent.querySelector(".forgot");
         let popupRegQues = parent.querySelector(".popup-reg-ques");
         let logInPopup = parent.querySelector("#logInPopup");
